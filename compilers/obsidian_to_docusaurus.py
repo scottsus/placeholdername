@@ -103,5 +103,5 @@ def format(file_name):
     md_file.write(formatted_content)
 
 if __name__ == '__main__':
-    file_name = "Dynamic Logic 1.mdx"
+    file_name = "blah.mdx"
     format(file_name)
