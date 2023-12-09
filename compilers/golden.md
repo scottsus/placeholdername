@@ -28,12 +28,12 @@
 - Idea: generate a model $p(e|f)$ which estimates the conditional probability of any English sentence $e$ given the French sentence $f$
 	- use training corpus to set model parameters
 - Definition: $$
-	\begin{flalign}
+    \begin{flalign}
     & p(e|f) = \frac{p(e,f)}{p(f)} = \frac{p(e)p(f|e)}{\sum_{e}p(e)p(f|e)} \text{ where} &\\
 	& \quad p(e): \text{the language model} &\\
 	& \quad p(f|e): \text{the translation model} &\\
     \end{flalign}
-	$$
+  $$
 - then the decoding problem is defined by
 	$\quad\text{argmax}_{e}p(e|f) = \text{argmax}_{e}p(e)p(f|e)$
 ### Language Model: [[Trigram]]
@@ -64,7 +64,7 @@
     & \quad \times t(ete|been) \times t(mis|implemented) &\\
     & \quad \times t(en|implemented) \times t(application|implemented) &\\
     \end{flalign}
-	$$
+  $$
 - Example model paremeters
 
 | English  | French    | Probability |
@@ -96,7 +96,7 @@
 	- Model 2
 		$\quad p(f|a,e,m) = \prod_{j=1}^m q(a_{j}|j,l,m)t(f_{j}|e_{a_{j}})$
 	- Example $$
-	\begin{flalign}
+        \begin{flalign}
         & l=6, m=7 &\\
         & e=\text{And the program has been implemented} &\\
         & l=\text{Le programme a ete mis en application} &\\
@@ -107,7 +107,7 @@
         & \quad \times t(ete|been) \times t(mis|implemented) \times t(en|implemented) &\\
         & \quad \times t(application|implemented) &\\
         \end{flalign}
-	$$
+      $$
 	- Generative process:
 		1. pick alignment randomly
 			$\quad \prod_{j=1}^mq(a_{j}|j,l,m)$
@@ -120,28 +120,28 @@
 - output: parameters $t(f|e)$ and $q(i|j,l,m)$
 - primary challenge: alignments are not known
 	- data annotation is expensive $$
-	\begin{flalign}
+	   \begin{flalign}
 	   & \quad e^{(100)}: \text{ And the program has been implemented} &\\
 	   & \quad f^{(100)}: \text{ Le programme a ete mis en application} &\\
 	   \end{flalign}
-	$$
+	 $$
 	- chicken and egg problem
 - Expectation Maximization (EM) algorithm
 ##### Idea
 1. assume alignments are accessible $$
-	\begin{flalign}
+    \begin{flalign}
     & \quad e^{(100)}: \text{ And the program has been implemented} &\\
 	& \quad f^{(100)}: \text{ Le programme a ete mis en application} &\\
 	& \quad a^{(100)}: \{ 2,3,4,5,6,6,6 \} &\\
     \end{flalign}
-	$$
+  $$
 2. we will then have triplets $(e^{(k)}, f^{(k)}, a^{(k)})$
 3. now, model estimates for parameters boils down to counting, ex, $t(position|position)$ $$
-	\begin{flalign}
+    \begin{flalign}
     & t_{ML}(f|e) = \frac{Count(e,f)}{Count(e)} &\\
 	& q_{ML}(j|i,l,m) = \frac{Count(j,i,l,m)}{Count(i,l,m)} &\\
     \end{flalign}
-	$$
+  $$
 ##### Execution
 **Input**
 Given a training corpus $(f^{(k)}, e^{(k)}, a^{(k)})$ for $k=1\dots n$ where
@@ -198,11 +198,10 @@ $$
 - the algorithm is iterative; we start with some arbitrary choice for $q$ and $t$ parameters
 - at each iteration we compute *counts* based on the data together with our current parameter estimates
 - we then re-estimate the parameters with these counts and iterate
-- the delta function $\delta(k,i,j)$ is defined by $$
-	\begin{flalign}
+- the delta function $\delta(k,i,j)$ is defined by $$\begin{flalign}
 	& \delta(k,i,j) = \frac{q(j|i,l_{k},m_{k})t(f_{i}|e_{j}^{(k)})}{\sum_{j=0}^{l_{k}}q(j|i,l_{k},m_{k})t(f_{i}^{(k)}|e_{j}^{(k)})} &\\
 	\end{flalign}
-	$$
+  $$
 - returning to the above formula $$
 	\begin{flalign}
 	& \text{set all counts }c(\dots) = 0 &\\
@@ -221,7 +220,7 @@ $$
 	& \qquad \quad t_{ML}(f|e) = \frac{c(e,f)}{c(e)} &\\
 	& \qquad \quad q_{ML}(j|i,l,m) = \frac{c(j|i,l,m)}{c(i,l,m)} &\\
 	\end{flalign}
-	$$
+  $$
 #### Visualization
 ![[IMG-20231207144400.png]]
 ![[IMG-20231207144329.png]]

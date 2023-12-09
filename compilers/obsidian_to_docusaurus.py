@@ -53,17 +53,16 @@ def convert_block_math_newline(markdown_text):
 def convert_square_brackets_to_image_path(markdown_text):
     """
     Converts obsidian ![[IMAGE_NAME]] to 
-    - ![Image](/static/attachments/IMAGE_NAME) OR
-    - <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
+     - ![Image](/static/attachments/IMAGE_NAME) OR
+     - <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
     depending on whether or not a width was provided.
     """
 
-    pattern = r"!\[\[(.*?)\]\]"
+    pattern = r'!\[\[(.*?)\]\]'
 
     def replace_with_path(match):
         image_name = match.group(1)
         image_name = image_name.replace(' ', '%')
-        print(image_name)
 
         image_name_parts = image_name.split('|')
         if (len(image_name_parts) > 1):
@@ -103,5 +102,5 @@ def format(file_name):
     md_file.write(formatted_content)
 
 if __name__ == '__main__':
-    file_name = "blah.mdx"
+    file_name = "blah.md"
     format(file_name)
