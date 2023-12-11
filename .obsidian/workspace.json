@@ -174,8 +174,11 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "38185c0fcba90bad",
+  "active": "be66c745e2a291cd",
   "lastOpenFiles": [
+    "src/theme/DocRoot/Layout/Main/styles.module.css",
+    "src/theme/DocRoot/Layout/Main/index.js",
+    "src/theme/DocRoot/Layout/Main",
     "src/theme/DocRoot/Layout/Sidebar/ExpandButton/styles.module.css",
     "src/theme/DocRoot/Layout/Sidebar/ExpandButton/index.js",
     "src/theme/DocRoot/Layout/Sidebar/styles.module.css",
@@ -184,9 +187,6 @@
     "src/theme/DocRoot/Layout/Sidebar",
     "src/theme/DocRoot/Layout",
     "src/theme/DocRoot",
-    "src/theme",
-    "src/theme/DocRoot/Layout/Main/styles.module.css",
-    "src/theme/DocRoot/Layout/Main/index.js",
     "misc/README.md",
     "misc/church/README.md",
     "static/attachments/IMG-20231210221708.png",

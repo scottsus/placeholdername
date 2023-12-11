@@ -6,6 +6,7 @@ import { useLocation } from '@docusaurus/router';
 import DocSidebar from '@theme/DocSidebar';
 import ExpandButton from '@theme/DocRoot/Layout/Sidebar/ExpandButton';
 import styles from './styles.module.css';
+import { useEffect } from 'react';
 
 function ResetOnSidebarChange({ children }) {
   const sidebar = useDocsSidebar();
@@ -27,13 +28,27 @@ export default function DocRootLayoutSidebar({
     if (hiddenSidebar) {
       setHiddenSidebar(false);
     }
-    // onTransitionEnd won't fire when sidebar animation is disabled
-    // fixes https://github.com/facebook/docusaurus/issues/8918
     if (!hiddenSidebar && prefersReducedMotion()) {
       setHiddenSidebar(true);
     }
     setHiddenSidebarContainer((value) => !value);
   }, [setHiddenSidebarContainer, hiddenSidebar]);
+
+  useEffect(() => {
+    const toggleSidebarNotionStyle = (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key === 'b') {
+        setHiddenSidebar(hiddenSidebar => !hiddenSidebar)
+        setHiddenSidebarContainer(hiddenSidebarContainer => !hiddenSidebarContainer)
+      }
+    };
+
+    window.addEventListener('keydown', toggleSidebarNotionStyle);
+
+    return () => {
+      window.removeEventListener('keydown', toggleSidebarNotionStyle);
+    };
+  }, []);
+
   return (
     <aside
       className={clsx(
