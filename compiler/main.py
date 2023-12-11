@@ -19,12 +19,16 @@ def get_changed_files(root_dir):
     return [f for f in all_files if f not in deleted and 
         (f.endswith('.md') or f.endswith('.md"'))]
 
-def forward_compile(root_dir):
+def forward_compile(root_dir, unchanged_only=False):
     """
     Converts .md files edited using Obsidian to Docusaurus format.
     """
 
-    target_files = get_changed_files(root_dir)
+    if unchanged_only:
+        target_files = get_changed_files(root_dir)
+    else:
+        target_files = get_all_files(root_dir)
+
     for target in target_files:
         compile_obsidian_to_docusaurus(target)
 
@@ -50,6 +54,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Compile Obsidian <-> Docusaurus markdown files.'
     )
+    parser.add_argument('--all', action='store_true', help='Build Docusaurus')
     parser.add_argument('--forward', action='store_true', help='Compile Obsidian -> Docusaurus')
     parser.add_argument('--backward', action='store_true', help='Compile Docusaurus -> Obsidian')
     args = parser.parse_args()
@@ -60,8 +65,13 @@ if __name__ == '__main__':
     # Always compile backwards
     backward_compile('./blog')
     backward_compile('./docs')
-    
-    if not args.backward:
+
+    if args.all:
         forward_compile('./blog')
         forward_compile('./docs')
+        exit(0)
+    
+    if not args.backward:
+        forward_compile('./blog', unchanged_only=True)
+        forward_compile('./docs', unchanged_only=True)
         

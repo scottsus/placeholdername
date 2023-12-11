@@ -1,3 +1,5 @@
+import Image from '@site/src/components/Image'
+
 ## Transfer-Based Machine Translation
 - Idea: improve rule-based MT
 	1. source analysis: analyze source language → build syntactic model for source text
