@@ -2,7 +2,6 @@
 Formats Docusaurus notes to be compatible with Obsidian.
 """
 
-import sys
 import re
 
 def convert_inline_math(markdown_text):
@@ -52,23 +51,29 @@ def convert_block_math_newline(markdown_text):
 
 def convert_image_path_to_square_brackets(markdown_text):
     """
-    Converts Docusaurus:
-     - ![Image](/attachments/IMAGE_NAME) OR
-     - <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
-    to Obsidian ![[IMAGE_NAME|WIDTH]]
+    Converts Docusaurus <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/> to 
+    Obsidian ![[/static/attachments/IMAGE_NAME|WIDTH]]
     """
 
-    # Pattern for ![Image](/attachments/IMAGE_NAME)
-    # Replace with Obsidian format ![[IMAGE_NAME]]
-    pattern1 = r'!\[.*?\]\(/attachments/(.*?)\)'
-    markdown_text = re.sub(pattern1, r'![[\1]]', markdown_text)
-
-    # Pattern for <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
-    # Replace with Obsidian format ![[IMAGE_NAME|WIDTH]]
-    pattern2 = r'<Image src="/attachments/(.*?)" width="(\d+)px"/>'
-    markdown_text = re.sub(pattern2, r'![[\1|\2]]', markdown_text)
+    pattern = r'<Image src="/attachments/(.*?)"(?: width="(\d+)px")? alt="Image"/>'
+    replacement = r'![[\1' + (r'|\2' if '\2' in markdown_text else '') + r']]'
+    markdown_text = re.sub(pattern, replacement, markdown_text)
 
     return markdown_text
+
+def convert_color_span_style(markdown_text):
+    """
+    Converts Docusaurus <span style={{ color: #COLOR }}> to 
+    Obsidian <span style="color: #COLOR">
+    """
+
+    pattern = r'<span style={{ color: #(.*?) }}'
+
+    def replace_func(match):
+        color_code = match.group(1)
+        return f'<span style="color: #{color_code}">'
+    
+    return re.sub(pattern, replace_func, markdown_text)
 
 def compile_docusaurus_to_obsidian(file_name):
     md_file = open(file_name)

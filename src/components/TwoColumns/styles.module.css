@@ -1,0 +1,14 @@
+.twoColumns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
+  column-gap: 1rem;
+  overflow: scroll;
+}
+
+.twoColumns::-webkit-scrollbar {
+  display: none;
+}

@@ -2,7 +2,6 @@
 Formats notes taken in Obsidian to be compatible with Docusaurus.
 """
 
-import sys
 import re
 
 def convert_inline_math(markdown_text):
@@ -53,41 +52,37 @@ def convert_block_math_newline(markdown_text):
 
 def convert_square_brackets_to_image_path(markdown_text):
     """
-    Converts obsidian ![[IMAGE_NAME]] to 
-     - ![Image](/static/attachments/IMAGE_NAME) OR
-     - <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
-    depending on whether or not a width was provided.
+    Converts Obsidian ![[/static/attachments/IMAGE_NAME|WIDTH]] to 
+    Docusaurus <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
     """
 
     pattern = r'!\[\[(.*?)\]\]'
 
-    def replace_with_path(match):
+    def replace_func(match):
         image_name = match.group(1)
         image_name = image_name.replace(' ', '%')
 
         image_name_parts = image_name.split('|')
         if (len(image_name_parts) > 1):
-            return f'<Image src="/attachments/{image_name_parts[0]}" width="{(image_name_parts[1] * 1.5)}px"/>'
+            return f'<Image src="/attachments/{image_name_parts[0]}" width="{image_name_parts[1]}px" alt="Image"/>'
         
-        return f'![Image](/attachments/{image_name})'
+        return f'<Image src="/attachments/{image_name}" alt="Image"/>'
 
-    return re.sub(pattern, replace_with_path, markdown_text)
+    return re.sub(pattern, replace_func, markdown_text)
 
 def convert_color_span_style(markdown_text):
     """
-    Converts <span style="color:#f55656"> to <span style:{{ color: '#f55656' }}>
+    Converts Obsidian <span style="color: #COLOR"> to 
+    Docusaurus <span style={{ color: '#COLOR' }}>
     """
 
-    # Define the regex pattern to match the color style
-    pattern = r'<span style="color:(.*?)">'
+    pattern = r'<span style="color: (.*?)">'
 
-    # Function to replace the matched pattern
-    def replace_with_new_style(match):
+    def replace_func(match):
         color_code = match.group(1)
         return f'<span style={{{{ color: \'{color_code}\' }}}}>'
 
-    # Use re.sub to replace all occurrences of the pattern
-    return re.sub(pattern, replace_with_new_style, markdown_text)
+    return re.sub(pattern, replace_func, markdown_text)
 
 def compile_obsidian_to_docusaurus(file_name):
     print('Compiling Obsidian -> Docusaurus...')

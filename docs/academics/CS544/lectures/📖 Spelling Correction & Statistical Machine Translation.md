@@ -7,7 +7,7 @@
 	- POS + a set of rules based on grammar of source and target language (SOV vs SVO)
 	- long sentence reordering is easier
 	- SYSTRAN (Peter Toma, 1968) systems are based on this approach
-		![Image](/attachments/IMG-20231207144817.png)
+		<Image src="/attachments/IMG-20231207144817.png"/>
 ## Statistical Machine Translation
 - *Parallel texts (corpora)*
 	- sets of documents where each document in 1 language is accompanied by its translation in another language
@@ -40,13 +40,13 @@
 	$\\ \quad\text{argmax}_{e}p(e|f) = \text{argmax}_{e}p(e)p(f|e)$
 ### Language Model: [[Trigram]]
 - Example: Spanish to English
-	![Image](/attachments/IMG-20231207144108.png)
+	<Image src="/attachments/IMG-20231207144108.png"/>
 ### Translation Model: IBM Model
 - Idea: in the parallel corpus, consider that, for a pair, the English sentence has $l$ words and the French sentence has $m$ words.
 	- an *alignment map* determines which English word that each French word originated from
 		- an alignment $a$ is $\{ a_{1},\dots a_{m} \}$, where $a_j\in\{ 0\dots l\}$
 		- hence, there are $(l+1)^m$ possible alignments
-		![Image](/attachments/IMG-20231207144139.png)
+		<Image src="/attachments/IMG-20231207144139.png"/>
 - the total probability over all possible alignments is defined by
 	$\\ \quad p(f|e,m) = \sum_{a\in A} p(a|e,m) p(f|a,e,m)$
 	- we then model the conditional probabilities $p(a|e,m)$ and $p(f|a,e,m)$
@@ -245,8 +245,8 @@ $
 	\end{aligned}
 	$
 #### Visualization
-![Image](/attachments/IMG-20231207144400.png)
-![Image](/attachments/IMG-20231207144329.png)
+<Image src="/attachments/IMG-20231207144400.png"/>
+<Image src="/attachments/IMG-20231207144329.png"/>
 ### Model Evaluation
 - we use *[[perplexity]]*: deriving the probability of the training data according to the model
 	$\\ \log_{2}PP = -\sum_{s}\log_{2}p(e_{s}|f_{s})$
