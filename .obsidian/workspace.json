@@ -11,12 +11,8 @@
             "id": "38185c0fcba90bad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md"
-              }
+              "state": {}
             }
           },
           {
@@ -184,14 +176,9 @@
   },
   "active": "38185c0fcba90bad",
   "lastOpenFiles": [
-    "docs/academics/templates/✏️ Template.md",
-    "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
-    "docs/academics/EE477/lectures/🏭 Fabrication.md",
-    "docs/academics/EE477/lectures/💡 MOS Design Basics - Structure and Layout Masks.md",
-    "docs/academics/EE477/lectures/🇺🇸 Labor Day.md",
-    "docs/academics/EE477/lectures/💡 MOS Logic Design Basics - CMOS.md",
-    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Manufacturing.md",
-    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
+    "src/components/HomepageFeatures/styles.module.css",
+    "src/components/HomepageFeatures/index.tsx",
+    "src/components/HomepageFeatures",
     "static/attachments/IMG-20231210221708.png",
     "static/attachments/IMG-20231210221654.png",
     "static/attachments/IMG-20231210221635.png",
@@ -202,6 +189,15 @@
     "static/attachments/IMG-20231210221446.png",
     "static/attachments/IMG-20231210221424.png",
     "static/attachments/IMG-20231210221356.png",
+    "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
+    "docs/academics/EE477/lectures/💡 MOS Design Basics - Structure and Layout Masks.md",
+    "docs/academics/EE477/lectures/🏭 Fabrication.md",
+    "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md",
+    "docs/academics/templates/✏️ Template.md",
+    "docs/academics/EE477/lectures/🇺🇸 Labor Day.md",
+    "docs/academics/EE477/lectures/💡 MOS Logic Design Basics - CMOS.md",
+    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Manufacturing.md",
+    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
     "src/components/DisplayFlex/styles.module.css",
     "src/components/DisplayFlex/index.tsx",
     "src/components/DisplayFlex",
@@ -222,13 +218,8 @@
     "academics/EE477/lectures/Dynamic Logic.md",
     "academics/EE477/lectures/Sequential Logic Design Part I.md",
     "academics/CS544/lectures/📖 Spelling Correction & Statistical Machine Translation.md",
-    "academics/templates",
-    "Untitled",
     "academics/EE477/lectures/Sequential Logic Design Part II.md",
     "academics/EE477/lectures/Dynamic Logic 1.md",
-    "academics/EE477/lectures/HSPICE/HSPICE.md",
-    "academics/EE477/lectures/HSPICE/documentation.pdf",
-    "academics/CS544/lectures/IMG-20231207144400.png.md",
-    "academics/CS544/lectures/Pasted image 20231115143718.png.md"
+    "academics/EE477/lectures/HSPICE/HSPICE.md"
   ]
 }
