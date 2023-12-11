@@ -1140,15 +1140,15 @@ function getEndTagData(text) {
     return { found, startPosition, endPosition, matchLength };
 }
 const COL_REGEX_STRS = [["^===\\s*?column-end\\s*?===\\s*?$", ""],
-    ["^===\\s*?end-column\\s*?===\\s*?$", ""],
-    ["^===\\s*?column-break\\s*?===\\s*?$", ""],
-    ["^===\\s*?break-column\\s*?===\\s*?$", ""],
-    ["^---\\s*?column-end\\s*?---\\s*?$", ""],
-    ["^---\\s*?end-column\\s*?---\\s*?$", ""],
-    ["^---\\s*?column-break\\s*?---\\s*?$", ""],
-    ["^---\\s*?break-column\\s*?---\\s*?$", ""],
-    ["^ *?(?:\\?)\\columnbreak *?$", ""],
-    ["^:{3,} *column-?break *(?:(?:$\\n^)?| *):{3,} *$", "m"]];
+["^===\\s*?end-column\\s*?===\\s*?$", ""],
+["^===\\s*?column-break\\s*?===\\s*?$", ""],
+["^===\\s*?break-column\\s*?===\\s*?$", ""],
+["^---\\s*?column-end\\s*?---\\s*?$", ""],
+["^---\\s*?end-column\\s*?---\\s*?$", ""],
+["^---\\s*?column-break\\s*?---\\s*?$", ""],
+["^---\\s*?break-column\\s*?---\\s*?$", ""],
+["^ *?(?:\\?)\\columnbreak *?$", ""],
+["^:{3,} *column-?break *(?:(?:$\\n^)?| *):{3,} *$", "m"]];
 const COL_REGEX_ARR = [];
 for (let i = 0; i < COL_REGEX_STRS.length; i++) {
     COL_REGEX_ARR.push(new RegExp(COL_REGEX_STRS[i][0], COL_REGEX_STRS[i][1]));
@@ -1808,7 +1808,7 @@ var MultiColumnLayoutCSS;
     MultiColumnLayoutCSS["SingleColumnRightLayout"] = "mcm-singlecol-layout-right";
     // ------------------------------------------------------ //
     MultiColumnLayoutCSS["TwoEqualColumns"] = "mcm-two-equal-columns";
-    MultiColumnLayoutCSS["TwoColumnSmall"] = "mcm-two-column-small";
+    MultiColumnLayoutCSS["DisplayFlexmall"] = "mcm-two-column-small";
     MultiColumnLayoutCSS["TwoColumnLarge"] = "mcm-two-column-large";
     // ------------------------------------------------------ //
     MultiColumnLayoutCSS["ThreeEqualColumns"] = "mcm-three-equal-columns";
@@ -2176,9 +2176,9 @@ class RegionManager {
         for (let i = 0; i < this.domList.length; i++) {
             if (this.domList[i].originalElement) {
                 this.domList[i].originalElement.removeClasses([MultiColumnStyleCSS.RegionEndTag,
-                    MultiColumnStyleCSS.ColumnEndTag,
-                    MultiColumnStyleCSS.RegionSettings,
-                    MultiColumnStyleCSS.RegionContent]);
+                MultiColumnStyleCSS.ColumnEndTag,
+                MultiColumnStyleCSS.RegionSettings,
+                MultiColumnStyleCSS.RegionContent]);
                 if (this.domList[i].originalElement.parentElement) {
                     this.domList[i].originalElement.parentElement.removeChild(this.domList[i].originalElement);
                 }
@@ -2580,14 +2580,14 @@ function buildStandardLayouts(settings, multiColumnParent, columnContentDivs) {
                     attr: { "style": columnSpacingState(0, settings) }
                 });
                 columnContentDivs.push(multiColumnParent.createDiv({
-                    cls: `${MultiColumnStyleCSS.ColumnContent} ${MultiColumnLayoutCSS.TwoColumnSmall}`
+                    cls: `${MultiColumnStyleCSS.ColumnContent} ${MultiColumnLayoutCSS.DisplayFlexmall}`
                 }));
                 break;
             case ("right"):
             case ("second"):
             case ("last"):
                 columnContentDivs.push(multiColumnParent.createDiv({
-                    cls: `${MultiColumnStyleCSS.ColumnContent} ${MultiColumnLayoutCSS.TwoColumnSmall}`
+                    cls: `${MultiColumnStyleCSS.ColumnContent} ${MultiColumnLayoutCSS.DisplayFlexmall}`
                 }));
                 multiColumnParent.createDiv({
                     cls: `mcm-column-spacer`,
@@ -3628,7 +3628,8 @@ function createFileDOMManager(parentManager, fileKey) {
     function checkKeyExists(checkKey) {
         return regionMap.has(checkKey);
     }
-    return { regionMap: regionMap,
+    return {
+        regionMap: regionMap,
         hasStartTag: hasStartTag,
         createRegionalManager: createRegionalManager,
         getRegionalContainer: getRegionalContainer,

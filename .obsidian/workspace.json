@@ -182,8 +182,11 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "be66c745e2a291cd",
+  "active": "38185c0fcba90bad",
   "lastOpenFiles": [
+    "src/components/DisplayFlex/styles.module.css",
+    "src/components/DisplayFlex/index.tsx",
+    "src/components/DisplayFlex",
     "docs/academics/EE477/lectures/💡 MOS Design Basics - Structure and Layout Masks.md",
     "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md",
     "docs/academics/EE477/lectures/🇺🇸 Labor Day.md",
@@ -226,9 +229,6 @@
     "academics/EE477/lectures/HSPICE/documentation.pdf",
     "academics/CS544/lectures/IMG-20231207144400.png.md",
     "academics/CS544/lectures/Pasted image 20231115143718.png.md",
-    "attachments/academics/CS544/lectures/📖 Spelling Correction & Statistical Machine Translation",
-    "attachments/academics/CS544/lectures",
-    "attachments/academics/CS544",
-    "church/A Broken Heart.md"
+    "attachments/academics/CS544/lectures/📖 Spelling Correction & Statistical Machine Translation"
   ]
 }

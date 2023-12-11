@@ -1,4 +1,4 @@
-.twoColumns {
+.DisplayFlex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,6 +9,6 @@
   overflow: scroll;
 }
 
-.twoColumns::-webkit-scrollbar {
+.DisplayFlex::-webkit-scrollbar {
   display: none;
 }

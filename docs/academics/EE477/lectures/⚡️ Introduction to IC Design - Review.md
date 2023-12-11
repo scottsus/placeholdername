@@ -8,19 +8,19 @@ topics:
   - logic gates
 ---
 import Image from '@site/src/components/Image'
-import TwoColumns from '@site/src/components/TwoColumns'
+import DisplayFlex from '@site/src/components/DisplayFlex'
 
 ### Evolution of Transistors in Integrated Circuits
 - BJT in Bell Labs → single transistor → CMOS gate → first microprocessor → VLSI → ULSI → System-on-Chip
 - first ever computer: Babbage Difference Engine (1832)
-	<TwoColumns>
+	<DisplayFlex>
 		<div style={{ flex: '33%' }}>
 		<Image src="/attachments/IMG-20231210192506.png" alt="Image"/>
 		</div>
 		<div style={{ flex: '33%' }}>
 		**25,000 parts, £17,470**
 		</div>
-	</TwoColumns>
+	</DisplayFlex>
 - first **electronic** computer: ENIAC (1946)
 ### MOS Transistor Review
 - [Amazing video by Veritasium explaining how an NMOS transistor works](https://www.youtube.com/watch?v=IcrBqCFLHIY&ab_channel=Veritasium)
@@ -52,14 +52,14 @@ import TwoColumns from '@site/src/components/TwoColumns'
 ### Registers
 <Image src="/attachments/IMG-20231210191533.png" alt="Image"/>
 ### Pipelining
-<TwoColumns>
+<DisplayFlex>
 <div>
 <Image src="/attachments/IMG-20231210192009.png" alt="Image"/>
 </div>
 <div>
 <Image src="/attachments/IMG-20231210191940.png" alt="Image"/>
 </div>
-</TwoColumns>
+</DisplayFlex>
 ### Power
 - Instantaneous power
 	$\\ p(t) = v(t)i(t) = V_{supply}i(t)$

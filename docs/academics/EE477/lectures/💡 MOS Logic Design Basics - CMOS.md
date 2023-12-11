@@ -8,7 +8,7 @@ topics:
   - C
 ---
 import Image from '@site/src/components/Image'
-import TwoColumns from '@site/src/components/TwoColumns'
+import DisplayFlex from '@site/src/components/DisplayFlex'
 
 ### Combinational Logic
 - a combinational logic cell, logic circuit, or gate is generally a multiple input, single output system that performs a Boolean function
@@ -39,7 +39,7 @@ import TwoColumns from '@site/src/components/TwoColumns'
 - both pmos and nmos used in complementary manner to create Pull-Up Network (PUN) and Pull-Down Network (PDN)
     - if inputs to PUN are satisfied, pmoses in PUN turn on and brings $V_{DD}$ to output
     - if inputs to PDN are satisfied, nmoses in PDN turn on and brings GND to output
-    <TwoColumns>
+    <DisplayFlex>
     <div style={{ flex: '33%' }}>
     <Image src="/attachments/IMG-20231210212444.png" alt="Image"/>
     </div>
@@ -49,7 +49,7 @@ import TwoColumns from '@site/src/components/TwoColumns'
     <div style={{ flex: '33%' }}>
     <Image src="/attachments/IMG-20231210212501.png" alt="Image"/>
     </div>
-    </TwoColumns>
+    </DisplayFlex>
 - importantly, PUN and PDN are never simultaneously on
     - no direct path from $V_{DD}$ to GND → low power dissipation
 ### CMOS Transmission Gates (Pass Gates)
@@ -57,16 +57,16 @@ import TwoColumns from '@site/src/components/TwoColumns'
 - cmos TG operates as a bidirectional switch between A and B, controlled by C
     <Image src="/attachments/IMG-20231210212527.png" alt="Image"/>
 - in larger systems
-	<TwoColumns>
+	<DisplayFlex>
     <div style={{ flex: '50%' }}>
     <Image src="/attachments/IMG-20231210212552.png" alt="Image"/>
     </div>
     <div style={{ flex: '50%' }}>
     <Image src="/attachments/IMG-20231210212559.png" alt="Image"/>
     </div>
-    </TwoColumns>
+    </DisplayFlex>
 ### NOR Gate
-<TwoColumns>
+<DisplayFlex>
 <div style={{ flex: '30%' }}>
 | A   | B   | Out |
 | --- | --- | --- |
@@ -79,12 +79,12 @@ import TwoColumns from '@site/src/components/TwoColumns'
 <div style={{ flex: '30%' }}>
 <Image src="/attachments/IMG-20231210212630.png" alt="Image"/>
 </div>
-</TwoColumns>
+</DisplayFlex>
 - if A and B both 0, $V_{dd}$ → Out
 - if A or B is 1, nothing from $V_{dd}$, and A or B or both pulls Out to gnd
 - the top part is the PUN, bottom part is PDN
 ### NAND Gate
-<TwoColumns>
+<DisplayFlex>
 <div style={{ flex: '30%' }}>
 | A   | B   | Out |
 | --- | --- | --- |
@@ -97,7 +97,7 @@ import TwoColumns from '@site/src/components/TwoColumns'
 <div style={{ flex: '30%' }}>
 <Image src="/attachments/IMG-20231210212710.png" alt="Image"/>
 </div>
-</TwoColumns>
+</DisplayFlex>
 - PUN: $F = \overline A + \overline B = \overline {AB}$
 - PDN: $G = AB$
 - if A or B is 0, $V_{dd}$ → Out

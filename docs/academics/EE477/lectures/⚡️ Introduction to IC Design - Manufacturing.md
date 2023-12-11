@@ -8,7 +8,7 @@ topics:
   - scaling
 ---
 import Image from '@site/src/components/Image'
-import TwoColumns from '@site/src/components/TwoColumns'
+import DisplayFlex from '@site/src/components/DisplayFlex'
 
 ## Moore’s Law
 - the number of transistors on a circuit doubles every 18-24 months
@@ -23,14 +23,14 @@ import TwoColumns from '@site/src/components/TwoColumns'
     - die cost = $f$(die area)$^4$
 ### Multilayer VLSI
 - cross section of a 5-layer chip
-    <TwoColumns>
+    <DisplayFlex>
     <div style={{ flex: '50%' }}>
     <Image src="/attachments/IMG-20231210211233.png" alt="Image"/>
     </div>
     <div style={{ flex: '50%' }}>
     <Image src="/attachments/IMG-20231210211833.png" alt="Image"/>
     </div>
-    </TwoColumns>
+    </DisplayFlex>
 ### System-on-Chip (SoC)
 - SoC integrates all the components of a hybrid system on a single substrate rather than building a conventional printed circuit board
 - **Advantages**
@@ -57,7 +57,7 @@ import TwoColumns from '@site/src/components/TwoColumns'
 ### VLSI Design Styles
 <Image src="/attachments/IMG-20231210211354.png" alt="Image"/>
 ### Challenges in Digital Design
-<TwoColumns>
+<DisplayFlex>
 <div style={{ flex: '33%' }}>
 **Miscroscopic Problems**
 - ultra high speed design
@@ -74,4 +74,4 @@ import TwoColumns from '@site/src/components/TwoColumns'
 - reuse & IP
 - predictability
 </div>
-</TwoColumns>
+</DisplayFlex>
