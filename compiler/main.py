@@ -53,12 +53,10 @@ if __name__ == '__main__':
         raise Exception('Cannot compile both ways')
     
     # Always compile backwards
-    print('Compiling backwards...')
     backward_compile('./blog')
     backward_compile('./docs')
     
     if not args.backward:
-        print('Compiling forwards...')
         forward_compile('./blog')
         forward_compile('./docs')
         
