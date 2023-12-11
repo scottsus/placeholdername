@@ -5,11 +5,16 @@ from obsidian_to_docusaurus import compile_obsidian_to_docusaurus
 from docusaurus_to_obsidian import compile_docusaurus_to_obsidian
 
 def get_changed_files(root_dir):
+    initial_quote_path = subprocess.check_output(['git', 'config', 'core.quotePath']).decode('utf-8').strip()
+    subprocess.run(['git', 'config', 'core.quotePath', 'false'])
+
     modified = subprocess.check_output(['git', 'ls-files', '--modified', root_dir]).decode('utf-8').splitlines()
     deleted = subprocess.check_output(['git', 'ls-files', '--deleted', root_dir]).decode('utf-8').splitlines()
     untracked = subprocess.check_output(['git', 'ls-files', '--others', '--exclude-standard', root_dir]).decode('utf-8').splitlines()
 
     all_files = set(modified + untracked)
+
+    subprocess.run(['git', 'config', 'core.quotePath', initial_quote_path])
 
     return [f for f in all_files if f not in deleted and 
         (f.endswith('.md') or f.endswith('.md"'))]
@@ -25,7 +30,7 @@ def forward_compile(root_dir):
 
 def get_all_files(root_dir):
     all_files = []
-    for root, dirs, files in os.walk(root_dir):
+    for root, _, files in os.walk(root_dir):
         for file in files:
             if file.endswith('.md'):
                 all_files.append(os.path.join(root, file))
