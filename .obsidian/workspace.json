@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md",
+                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md",
+                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md",
+                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md"
+                "file": "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md"
               }
             }
           },
@@ -184,27 +184,28 @@
   },
   "active": "38185c0fcba90bad",
   "lastOpenFiles": [
+    "docs/academics/templates/✏️ Template.md",
+    "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
+    "docs/academics/EE477/lectures/🏭 Fabrication.md",
+    "docs/academics/EE477/lectures/💡 MOS Design Basics - Structure and Layout Masks.md",
+    "docs/academics/EE477/lectures/🇺🇸 Labor Day.md",
+    "docs/academics/EE477/lectures/💡 MOS Logic Design Basics - CMOS.md",
+    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Manufacturing.md",
+    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
+    "static/attachments/IMG-20231210221708.png",
+    "static/attachments/IMG-20231210221654.png",
+    "static/attachments/IMG-20231210221635.png",
+    "static/attachments/IMG-20231210221620.png",
+    "static/attachments/IMG-20231210221605.png",
+    "static/attachments/IMG-20231210221548.png",
+    "static/attachments/IMG-20231210221510.png",
+    "static/attachments/IMG-20231210221446.png",
+    "static/attachments/IMG-20231210221424.png",
+    "static/attachments/IMG-20231210221356.png",
     "src/components/DisplayFlex/styles.module.css",
     "src/components/DisplayFlex/index.tsx",
     "src/components/DisplayFlex",
-    "docs/academics/EE477/lectures/💡 MOS Design Basics - Structure and Layout Masks.md",
-    "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md",
-    "docs/academics/EE477/lectures/🇺🇸 Labor Day.md",
-    "docs/academics/templates/✏️ Template.md",
     "docs/academics/EE477/lectures/Untitled 1.md",
-    "docs/academics/EE477/lectures/💡 MOS Logic Design Basics - CMOS.md",
-    "static/attachments/IMG-20231210212745.png",
-    "static/attachments/IMG-20231210212710.png",
-    "static/attachments/IMG-20231210212630.png",
-    "static/attachments/IMG-20231210212559.png",
-    "static/attachments/IMG-20231210212552.png",
-    "static/attachments/IMG-20231210212527.png",
-    "static/attachments/IMG-20231210212501.png",
-    "static/attachments/IMG-20231210212453.png",
-    "static/attachments/IMG-20231210212444.png",
-    "static/attachments/IMG-20231210212314.png",
-    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Manufacturing.md",
-    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
     "docs/academics/EE477/lectures/📖 Syllabus.md",
     "attachments",
     "Spaces/Home",
@@ -228,7 +229,6 @@
     "academics/EE477/lectures/HSPICE/HSPICE.md",
     "academics/EE477/lectures/HSPICE/documentation.pdf",
     "academics/CS544/lectures/IMG-20231207144400.png.md",
-    "academics/CS544/lectures/Pasted image 20231115143718.png.md",
-    "attachments/academics/CS544/lectures/📖 Spelling Correction & Statistical Machine Translation"
+    "academics/CS544/lectures/Pasted image 20231115143718.png.md"
   ]
 }

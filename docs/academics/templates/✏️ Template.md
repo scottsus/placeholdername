@@ -8,6 +8,7 @@ topics:
   - C
 ---
 import Image from '@site/src/components/Image'
+import DisplayFlex from '@site/src/components/DisplayFlex'
 
 ## Header 2
 Insert content here
