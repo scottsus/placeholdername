@@ -1,4 +1,5 @@
 import os
+import argparse
 import subprocess
 from obsidian_to_docusaurus import compile_obsidian_to_docusaurus
 from docusaurus_to_obsidian import compile_docusaurus_to_obsidian
@@ -22,18 +23,42 @@ def forward_compile(root_dir):
     for target in target_files:
         compile_obsidian_to_docusaurus(target)
 
+def get_all_files(root_dir):
+    all_files = []
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if file.endswith('.md'):
+                all_files.append(os.path.join(root, file))
+    
+    return all_files
+
 def backward_compile(root_dir):
     """
     Converts .md files rendered by Docusaurus to Obsidian format.
     """
 
-    target_files = get_changed_files(root_dir)
+    target_files = get_all_files(root_dir)
     for target in target_files:
         compile_docusaurus_to_obsidian(target)
 
 if __name__ == '__main__':
-    # backward_compile('./blog')
-    # backward_compile('./docs')
+    parser = argparse.ArgumentParser(
+        description='Compile Obsidian <-> Docusaurus markdown files.'
+    )
+    parser.add_argument('--forward', action='store_true', help='Compile Obsidian -> Docusaurus')
+    parser.add_argument('--backward', action='store_true', help='Compile Docusaurus -> Obsidian')
+    args = parser.parse_args()
 
-    forward_compile('./blog')
-    forward_compile('./docs')
+    if args.forward and args.backward:
+        raise Exception('Cannot compile both ways')
+    
+    # Always compile backwards
+    print('Compiling backwards...')
+    backward_compile('./blog')
+    backward_compile('./docs')
+    
+    if not args.backward:
+        print('Compiling forwards...')
+        forward_compile('./blog')
+        forward_compile('./docs')
+        

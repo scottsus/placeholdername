@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "python3 compilers/file_tracker.py && docusaurus start",
-    "build": "python3 compilers/file_tracker.py && docusaurus build",
+    "start": "python3 compiler/main.py && docusaurus start",
+    "build": "python3 compiler/main.py && docusaurus build",
+    "dev": "python3 compiler/main.py --backward",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

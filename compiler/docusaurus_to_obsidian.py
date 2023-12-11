@@ -65,7 +65,7 @@ def convert_image_path_to_square_brackets(markdown_text):
 
     # Pattern for <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
     # Replace with Obsidian format ![[IMAGE_NAME|WIDTH]]
-    pattern2 = r'<Image src="/attachments/(.*?)" width="\{(\d+)px\}"/>'
+    pattern2 = r'<Image src="/attachments/(.*?)" width="(\d+)px"/>'
     markdown_text = re.sub(pattern2, r'![[\1|\2]]', markdown_text)
 
     return markdown_text

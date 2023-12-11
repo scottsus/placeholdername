@@ -67,7 +67,7 @@ def convert_square_brackets_to_image_path(markdown_text):
 
         image_name_parts = image_name.split('|')
         if (len(image_name_parts) > 1):
-            return f'<Image src="/attachments/{image_name_parts[0]}" width="{image_name_parts[1]}px"/>'
+            return f'<Image src="/attachments/{image_name_parts[0]}" width="{(image_name_parts[1] * 1.5)}px"/>'
         
         return f'![Image](/attachments/{image_name})'
 
@@ -90,6 +90,7 @@ def convert_color_span_style(markdown_text):
     return re.sub(pattern, replace_with_new_style, markdown_text)
 
 def compile_obsidian_to_docusaurus(file_name):
+    print('Compiling Obsidian -> Docusaurus...')
     md_file = open(file_name)
     md_file_contents = md_file.read()
     md_file.close()
