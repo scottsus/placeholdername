@@ -8,7 +8,7 @@ import TOCItemTree from '@theme/TOCItems/Tree';
 
 export default function TOCItems({
   toc,
-  className = 'table-of-contents table-of-contents__left-border',
+  className = 'table-of-contents',
   linkClassName = 'table-of-contents__link',
   linkActiveClassName = undefined,
   minHeadingLevel: minHeadingLevelOption,

@@ -1,0 +1,9 @@
+.tocListItem {
+  font-size: 1.4em;
+  margin-bottom: 0.7em;
+  border-radius: 4px;
+}
+
+.tocListItem:hover {
+  background-color: #1e1e1e;
+}

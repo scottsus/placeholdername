@@ -11,6 +11,8 @@
   .docSidebarContainer {
     position: fixed;
     height: 100vh;
+    margin-left: 2rem;
+    padding: 1rem 0 0;
     display: block;
     width: var(--doc-sidebar-width);
     margin-top: calc(-1 * var(--ifm-navbar-height));

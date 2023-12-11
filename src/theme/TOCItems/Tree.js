@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import clsx from 'clsx';
+import styles from './styles.module.css';
 
 function TOCItemTree({ toc, className, linkClassName, isChild }) {
   if (!toc.length) {
@@ -11,8 +13,7 @@ function TOCItemTree({ toc, className, linkClassName, isChild }) {
         <li key={heading.id}>
           <Link
             to={`#${heading.id}`}
-            className={linkClassName ?? undefined}
-            style={{ fontSize: '1.4em', marginBottom: '1em' }}
+            className={`${clsx(styles.tocListItem)} ${linkClassName ?? undefined}`}
             // Developer provided the HTML, so assume it's safe.
             dangerouslySetInnerHTML={{ __html: heading.value }}
           />
