@@ -2,7 +2,6 @@
 Formats notes taken in Obsidian to be compatible with Docusaurus.
 """
 
-import sys
 import re
 
 def convert_inline_math(markdown_text):
@@ -11,7 +10,7 @@ def convert_inline_math(markdown_text):
     Constraint: the '$' cannot be followed by '\\\\' or '\n'
     """
     
-    newline_pattern = r'(?<=\t\$)(?!\\\\|\n|\$)'
+    newline_pattern = r'(?<=\t\$)(?!\\\\|\n)'
     newline_replacement = r'\\\\ '
     markdown_text = re.sub(newline_pattern, newline_replacement, markdown_text)    
 
@@ -54,16 +53,17 @@ def convert_block_math_newline(markdown_text):
 def convert_square_brackets_to_image_path(markdown_text):
     """
     Converts obsidian ![[IMAGE_NAME]] to 
-     - ![Image](/static/attachments/IMAGE_NAME) OR
-     - <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
+    - ![Image](/static/attachments/IMAGE_NAME) OR
+    - <Image src="/attachments/IMAGE_NAME" width="{WIDTH}px"/>
     depending on whether or not a width was provided.
     """
 
-    pattern = r'!\[\[(.*?)\]\]'
+    pattern = r"!\[\[(.*?)\]\]"
 
     def replace_with_path(match):
         image_name = match.group(1)
         image_name = image_name.replace(' ', '%')
+        print(image_name)
 
         image_name_parts = image_name.split('|')
         if (len(image_name_parts) > 1):
@@ -89,7 +89,7 @@ def convert_color_span_style(markdown_text):
     # Use re.sub to replace all occurrences of the pattern
     return re.sub(pattern, replace_with_new_style, markdown_text)
 
-def compile_obsidian_to_docusaurus(file_name):
+def format(file_name):
     md_file = open(file_name)
     md_file_contents = md_file.read()
     md_file.close()
@@ -102,4 +102,6 @@ def compile_obsidian_to_docusaurus(file_name):
     formatted_content = convert_color_span_style(formatted_content)
     md_file.write(formatted_content)
 
-    print(f'Obsidian -> Docusaurus {file_name}')
+if __name__ == '__main__':
+    file_name = "Dynamic Logic 1.mdx"
+    format(file_name)

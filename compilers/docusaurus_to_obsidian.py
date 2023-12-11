@@ -2,6 +2,7 @@
 Formats Docusaurus notes to be compatible with Obsidian.
 """
 
+import sys
 import re
 
 def convert_inline_math(markdown_text):
@@ -69,7 +70,7 @@ def convert_image_path_to_square_brackets(markdown_text):
 
     return markdown_text
 
-def format(file_name):
+def compile_docusaurus_to_obsidian(file_name):
     md_file = open(file_name)
     md_file_contents = md_file.read()
     md_file.close()
@@ -81,6 +82,4 @@ def format(file_name):
     formatted_content = convert_image_path_to_square_brackets(formatted_content)
     md_file.write(formatted_content)
 
-if __name__ == "__main__":
-    file_name = 'blah.md'
-    format(file_name)
+    print(f'Docusaurus -> Obsidian {file_name}')

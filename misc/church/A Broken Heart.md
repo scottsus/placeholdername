@@ -1,0 +1,27 @@
+---
+date: 12-03-2023
+---
+
+- genesis 1:3 - heart is brightened by the light of knowing God
+	- evening → morning, darkness → light
+		- this is the state of the human heart that was once dark but is now light
+- now that we gone from darkness → light, we now need to keep the light
+- revelations 22:5 - and there will no longer be any night, and there will no longer be the need for any lamp or any sun
+	- God will illuminate the entire world
+- but after the first day, there was evening & morning
+	- no rest after the 7th day
+- we don’t necessarily know how much hurt or pain we have in our hearts
+	- we can’t heal this on our own → need God
+	- immediately take the wound to Jesus
+- Mark 2:17 - Jesus said to them *it is not those who are healthy that need a physician, but those who are sick. I did not come to call the righteous, but sinners.*
+	- Jesus came to heal us who are sick
+	- our sickness: sin
+- Ephesians 4:26-27 - be angry and yet do not sin. Do not let the sun go down on your anger. And do not give the devil an opportunity.
+	- if Satan takes hold of us for one day, he will take hold of us forever
+- when we keep getting hurt, we try to sleep in peace, but the next day we try again
+	- how do we repair our heart that is broken?
+	- we should never rely on people to fix it
+- this process needs to shape us into a beautiful being
+- we need to be born again
+	- all the old things in the past that hurt us no longer do
+- if we take our broken hearts to people, we will only get hurt more
