@@ -11,8 +11,12 @@
             "id": "38185c0fcba90bad",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409.5
+    "width": 409.5,
+    "collapsed": true
   },
   "right": {
     "id": "4565534fcf250795",
@@ -89,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md"
+              }
             }
           },
           {
@@ -158,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 353.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,19 +184,19 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "be66c745e2a291cd",
+  "active": "38185c0fcba90bad",
   "lastOpenFiles": [
-    "src/theme/DocRoot/Layout/Main/styles.module.css",
-    "src/theme/DocRoot/Layout/Main/index.js",
-    "src/theme/DocRoot/Layout/Main",
+    "src/theme/Footer/Layout/index.js",
+    "src/theme/Footer/Layout",
+    "src/theme/Footer",
     "src/theme/DocRoot/Layout/Sidebar/ExpandButton/styles.module.css",
     "src/theme/DocRoot/Layout/Sidebar/ExpandButton/index.js",
     "src/theme/DocRoot/Layout/Sidebar/styles.module.css",
     "src/theme/DocRoot/Layout/Sidebar/index.js",
     "src/theme/DocRoot/Layout/Sidebar/ExpandButton",
+    "src/theme/DocRoot/Layout/Main/styles.module.css",
+    "src/theme/DocRoot/Layout/Main/index.js",
     "src/theme/DocRoot/Layout/Sidebar",
-    "src/theme/DocRoot/Layout",
-    "src/theme/DocRoot",
     "misc/README.md",
     "misc/church/README.md",
     "static/attachments/IMG-20231210221708.png",
