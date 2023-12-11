@@ -85,7 +85,6 @@ def convert_color_span_style(markdown_text):
     return re.sub(pattern, replace_func, markdown_text)
 
 def compile_obsidian_to_docusaurus(file_name):
-    print('Compiling Obsidian -> Docusaurus...')
     md_file = open(file_name)
     md_file_contents = md_file.read()
     md_file.close()
