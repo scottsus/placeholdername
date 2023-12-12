@@ -3,7 +3,7 @@ import clsx from 'clsx';
 export default function FooterLayout({ style, links, logo, copyright }) {
   return (
     <footer
-      style={{ position: 'relative' }}
+      style={{ display: 'none', position: 'relative' }}
       className={clsx('footer', {
         'footer--dark': style === 'dark',
       })}>

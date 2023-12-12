@@ -67,7 +67,7 @@ def convert_color_span_style(markdown_text):
     Obsidian <span style="color: #COLOR">
     """
 
-    pattern = r'<span style={{ color: #(.*?) }}'
+    pattern = r'<span style={{ color: \'#(.*?)\' }}>'
 
     def replace_func(match):
         color_code = match.group(1)
@@ -85,6 +85,7 @@ def compile_docusaurus_to_obsidian(file_name):
     formatted_content = convert_block_math_bullet(formatted_content)
     formatted_content = convert_block_math_newline(formatted_content)
     formatted_content = convert_image_path_to_square_brackets(formatted_content)
+    formatted_content = convert_color_span_style(formatted_content)
     md_file.write(formatted_content)
 
     print(f'Docusaurus -> Obsidian {file_name}')

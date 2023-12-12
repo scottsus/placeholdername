@@ -1,7 +1,7 @@
 ---
-lecture: 0.1
-sidebar_position: 0
-date: 2023-11-01
+lecture: 10.1
+sidebar_position: 20
+date: 2023-10-23
 topics:
   - A
   - B

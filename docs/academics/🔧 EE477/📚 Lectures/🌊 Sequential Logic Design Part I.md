@@ -1,6 +1,6 @@
 ---
 lecture: 12.1
-sidebar_position: 10
+sidebar_position: 24
 date: 2023-11-06
 topics:
   - sequential
@@ -117,7 +117,7 @@ import Image from '@site/src/components/Image'
 - all NAND gates
 	<!-- <Image src="/attachments/📖%Spelling%Correction%&%Statistical%Machine%Translation_jpg_6.png"/> -->
 #### NOR-based JK latch with AOI realization
-- from [[Sequential Logic Design Part I#AOI-Based Implementation]]
+- from [[🌊 Sequential Logic Design Part I#AOI-Based Implementation]]
 	<Image src="/attachments/IMG-20231207180134.png"/>
 - simplified to
 	<Image src="/static/attachments/IMG-20231207180145.png" width="400px" alt="Image"/>
@@ -146,7 +146,7 @@ import Image from '@site/src/components/Image'
 	<Image src="/attachments/IMG-20231207180243.png"/>
 - <span style={{ color: '#f55656' }}>1’s Catching Problem:</span> while CK=1, a narrow spike or *glitch* in 1 of the inputs, say in the $J$ line, may set/reset the master latch and cause an unwanted state transition in master latch → propagating to slave in the next phase
 ## D Latch
-- we return to [[Sequential Logic Design Part I#NOR-Based SR Latch]], where we modify it to obtain a D Latch
+- we return to [[🌊 Sequential Logic Design Part I#NOR-Based SR Latch]], where we modify it to obtain a D Latch
 	- instead of $S$ and $R$ signals, we have a single $D$ signal
 	<Image src="/static/attachments/IMG-20231207180258.png" width="450px" alt="Image"/>
 	- when CK=1, $Q=D$

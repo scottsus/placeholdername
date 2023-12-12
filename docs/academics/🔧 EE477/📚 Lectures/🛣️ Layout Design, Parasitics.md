@@ -1,11 +1,10 @@
 ---
-lecture: 0.1
-sidebar_position: 0
-date: 2023-11-01
+lecture: 4.2
+sidebar_position: 8
+date: 2023-09-13
 topics:
-  - A
-  - B
-  - C
+  - layout
+  - parasitics
 ---
 import Image from '@site/src/components/Image'
 import DisplayFlex from '@site/src/components/DisplayFlex'

@@ -11,10 +11,30 @@
       "docs/academics/EE477/lectures/💡 MOS Design Basics - Structure and Layout Masks.md",
       "docs/academics/EE477/lectures/🏭 Fabrication.md",
       "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
-      "docs/academics/EE477/lectures/Dynamic Logic.md",
-      "docs/academics/EE477/lectures/HSPICE",
-      "docs/academics/EE477/lectures/Sequential Logic Design Part I.md",
-      "docs/academics/EE477/lectures/Sequential Logic Design Part II.md"
+      "docs/academics/EE477/lectures/⚡️ MOS Theory - Band Theory.md",
+      "docs/academics/EE477/lectures/⚡️ MOS Theory - NMOS, IV Characteristics.md",
+      "docs/academics/EE477/lectures/⚡️ MOS Theory - Scaling.md",
+      "docs/academics/EE477/lectures/⚡️ MOS Theory - Short Channel Effects.md",
+      "docs/academics/EE477/lectures/⚡️ MOS Theory - Parasitic Capacitances.md",
+      "docs/academics/EE477/lectures/🔻 Inverters - Static Characteristics.md",
+      "docs/academics/EE477/lectures/🔻 Inverters - Load Inverters.md",
+      "docs/academics/EE477/lectures/🔻 Inverters - CMOS Inverter.md",
+      "docs/academics/EE477/lectures/📙 Exam 1 Review I.md",
+      "docs/academics/EE477/lectures/📙 Exam 1 Review II.md",
+      "docs/academics/EE477/lectures/📕 EXAM 1.md",
+      "docs/academics/EE477/lectures/⏰ Transient Analysis - ACC vs DIFF.md",
+      "docs/academics/EE477/lectures/⏰ Transient Analysis - Timing Constraints.md",
+      "docs/academics/EE477/lectures/🧱 Interconnect Modeling - Capacitances.md",
+      "docs/academics/EE477/lectures/🧱 Interconnect Modeling - Elmore Delay.md",
+      "docs/academics/EE477/lectures/🌊 Sequential Logic Design Part I.md",
+      "docs/academics/EE477/lectures/🌊 Sequential Logic Design Part II.md",
+      "docs/academics/EE477/lectures/🧨 Dynamic Logic - Dynamic CMOS.md",
+      "docs/academics/EE477/lectures/🧨 Dynamic Logic - Domino CMOS.md",
+      "docs/academics/EE477/lectures/🧨 Dynamic Logic - NORA CMOS.md",
+      "docs/academics/EE477/lectures/🍗 Thanksgiving.md",
+      "docs/academics/EE477/lectures/📙 Exam 2 Review I.md",
+      "docs/academics/EE477/lectures/📙 Exam 2 Review II.md",
+      "docs/academics/EE477/lectures/HSPICE"
     ],
     "docs": [
       "docs/🔥 My World.md",
@@ -37,6 +57,11 @@
       "package.json",
       "sidebars.ts",
       "tsconfig.json"
+    ],
+    "docs/academics": [
+      "docs/academics/🤖 CS544",
+      "docs/academics/🔧 EE477",
+      "docs/academics/templates"
     ]
   },
   "actionBarOrder": {},

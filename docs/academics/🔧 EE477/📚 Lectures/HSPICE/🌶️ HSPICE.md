@@ -1,5 +1,6 @@
 ---
 lecture: 12.2
+sidebar_position: 32
 date: 2023-11-08
 topics:
   - timing

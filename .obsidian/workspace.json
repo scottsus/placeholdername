@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "cd856506148054ee",
+        "id": "f848668c727f9639",
         "type": "tabs",
         "children": [
           {
-            "id": "38185c0fcba90bad",
+            "id": "a03fd6812ceec524",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409.5,
-    "collapsed": true
+    "width": 409.5
   },
   "right": {
     "id": "4565534fcf250795",
@@ -94,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md"
-              }
+              "state": {}
             }
           },
           {
@@ -167,8 +158,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,8 +174,36 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "38185c0fcba90bad",
+  "active": "be66c745e2a291cd",
   "lastOpenFiles": [
+    "docs/academics/🔧 EE477/📚 Lectures/HSPICE/🌶️ HSPICE.md",
+    "docs/academics/🤖 CS544/📚 Lectures/✍️ Spelling Correction & Statistical Machine Translation.md",
+    "docs/academics/🔧 EE477/📚 Lectures/HSPICE/documentation.pdf",
+    "docs/academics/🔧 EE477/📚 Lectures/📙 Exam 2 Review II.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🍗 Thanksgiving.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🌊 Sequential Logic Design Part II.md",
+    "docs/academics/🔧 EE477/📚 Lectures/📙 Exam 2 Review I.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🧨 Dynamic Logic - NORA CMOS.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🧨 Dynamic Logic - Domino CMOS.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🧨 Dynamic Logic - Dynamic CMOS.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🌊 Sequential Logic Design Part I.md",
+    "docs/academics/🔧 EE477/📚 Lectures/📙 Exam 1 Review II.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🧱 Interconnect Modeling - Elmore Delay.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🧱 Interconnect Modeling - Capacitances.md",
+    "docs/academics/🔧 EE477/📚 Lectures/⏰ Transient Analysis - Timing Constraints.md",
+    "docs/academics/🔧 EE477/📚 Lectures/⏰ Transient Analysis - ACC vs DIFF.md",
+    "docs/academics/🔧 EE477/📚 Lectures/📕 EXAM 1.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🇺🇸 Labor Day.md",
+    "compiler/test.py",
+    "docs/academics/🔧 EE477/📚 Lectures/🛣️ Layout Design, Parasitics.md",
+    "docs/academics/templates/✏️ Template.md",
+    "docs/academics/🔧 EE477/📚 Lectures/📙 Exam 1 Review I.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🔻 Inverters - CMOS Inverter.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🔻 Inverters - Load Inverters.md",
+    "docs/academics/🔧 EE477/📚 Lectures/🔻 Inverters - Static Characteristics.md",
+    "docs/academics/🔧 EE477/📚 Lectures/⚡️ MOS Theory - Parasitic Capacitances.md",
+    "docs/academics/🔧 EE477/📚 Lectures/⚡️ MOS Theory - NMOS, IV Characteristics.md",
+    "docs/academics/🔧 EE477/📚 Lectures/⚡️ MOS Theory - Short Channel Effects.md",
     "src/theme/TOCItems/styles.module.css",
     "src/theme/TOCItems/index.js",
     "src/theme/TOCItems/Tree.js",
@@ -194,11 +212,6 @@
     "src/theme/TOC/index.js",
     "src/theme/TOC",
     "src/theme/DocItem/TOC/Desktop/index.js",
-    "src/theme/DocItem/TOC/Desktop",
-    "src/theme/DocItem/TOC",
-    "src/theme/DocItem",
-    "misc/README.md",
-    "misc/church/README.md",
     "static/attachments/IMG-20231210221708.png",
     "static/attachments/IMG-20231210221654.png",
     "static/attachments/IMG-20231210221635.png",
@@ -208,29 +221,6 @@
     "static/attachments/IMG-20231210221510.png",
     "static/attachments/IMG-20231210221446.png",
     "static/attachments/IMG-20231210221424.png",
-    "static/attachments/IMG-20231210221356.png",
-    "docs/academics/EE477/lectures/🛣️ Layout Design, Parasitics.md",
-    "docs/academics/EE477/lectures/💡 MOS Design Basics - Structure and Layout Masks.md",
-    "docs/academics/EE477/lectures/🏭 Fabrication.md",
-    "docs/academics/EE477/lectures/💡MOS Design Basics - Structure and Layout Masks.md",
-    "docs/academics/templates/✏️ Template.md",
-    "docs/academics/EE477/lectures/🇺🇸 Labor Day.md",
-    "docs/academics/EE477/lectures/💡 MOS Logic Design Basics - CMOS.md",
-    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Manufacturing.md",
-    "docs/academics/EE477/lectures/⚡️ Introduction to IC Design - Review.md",
-    "docs/academics/EE477/lectures/Untitled 1.md",
-    "docs/academics/EE477/lectures/📖 Syllabus.md",
-    "docs/academics/EE477/lectures/Dynamic Logic.md",
-    "docs/academics/EE477/lectures/Sequential Logic Design Part I.md",
-    "docs/academics/EE477/lectures/Sequential Logic Design Part II.md",
-    "docs/academics/EE477/lectures/1_1 ⚡️ Introduction to Integrated Circuit Design - Review.md",
-    "docs/academics/EE477/lectures/0_1 📖 Syllabus.md",
-    "academics/EE477/lectures/⚡️ Introduction to Integrated Circuit Design - Review.md",
-    "academics/EE477/lectures/📖 Syllabus.md",
-    "academics/templates/✏️ main.md",
-    "academics/EE477/lectures/Dynamic Logic.md",
-    "academics/EE477/lectures/Sequential Logic Design Part I.md",
-    "academics/CS544/lectures/📖 Spelling Correction & Statistical Machine Translation.md",
-    "academics/EE477/lectures/Sequential Logic Design Part II.md"
+    "static/attachments/IMG-20231210221356.png"
   ]
 }
