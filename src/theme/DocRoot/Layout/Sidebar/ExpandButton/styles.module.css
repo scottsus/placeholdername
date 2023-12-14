@@ -9,12 +9,12 @@
     align-items: center;
     justify-content: center;
     transition: background-color var(--ifm-transition-fast) ease;
-    background-color: var(--docusaurus-collapse-button-bg);
+    background-color: none;
   }
 
   .expandButton:hover,
   .expandButton:focus {
-    background-color: var(--docusaurus-collapse-button-bg-hover);
+    background-color: none;
   }
 
   .expandButtonIcon {

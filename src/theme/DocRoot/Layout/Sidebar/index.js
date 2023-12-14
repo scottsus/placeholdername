@@ -36,7 +36,7 @@ export default function DocRootLayoutSidebar({
 
   useEffect(() => {
     const toggleSidebarNotionStyle = (event) => {
-      if ((event.metaKey || event.ctrlKey) && event.key === 'b') {
+      if ((event.metaKey || event.ctrlKey) && event.key === '\\') {
         setHiddenSidebar(hiddenSidebar => !hiddenSidebar)
         setHiddenSidebarContainer(hiddenSidebarContainer => !hiddenSidebarContainer)
       }

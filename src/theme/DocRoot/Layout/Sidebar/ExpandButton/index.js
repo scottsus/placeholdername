@@ -1,7 +1,8 @@
 import React from 'react';
 import { translate } from '@docusaurus/Translate';
-import IconArrow from '@theme/Icon/Arrow';
+import CollapseButtonIcon from '@site/src/components/CollapseButtonIcon';
 import styles from './styles.module.css';
+
 export default function DocRootLayoutSidebarExpandButton({ toggleSidebar }) {
   return (
     <div
@@ -22,7 +23,7 @@ export default function DocRootLayoutSidebarExpandButton({ toggleSidebar }) {
       role="button"
       onKeyDown={toggleSidebar}
       onClick={toggleSidebar}>
-      <IconArrow className={styles.expandButtonIcon} />
+      <CollapseButtonIcon isReversed />
     </div>
   );
 }

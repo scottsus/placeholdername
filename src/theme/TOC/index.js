@@ -22,7 +22,7 @@ export default function TOC({ className, ...props }) {
 
   useEffect(() => {
     const toggleSidebarNotionStyle = (event) => {
-      if ((event.metaKey || event.ctrlKey) && event.key === 'b') {
+      if ((event.metaKey || event.ctrlKey) && event.key === '\\') {
         setTocIsHidden(tocIsHidden => !tocIsHidden)
       }
     };

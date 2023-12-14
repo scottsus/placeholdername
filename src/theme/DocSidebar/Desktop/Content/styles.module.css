@@ -1,0 +1,18 @@
+@media (min-width: 997px) {
+  .menu {
+    flex-grow: 1;
+    padding: 0.5rem;
+    height: 100%;
+    border-right: 1px solid var(--ifm-toc-border-color);
+  }
+  @supports (scrollbar-gutter: stable) {
+    .menu {
+      padding: 0.5em;
+      scrollbar-gutter: stable;
+    }
+  }
+
+  .menuWithAnnouncementBar {
+    margin-bottom: var(--docusaurus-announcement-bar-height);
+  }
+}
