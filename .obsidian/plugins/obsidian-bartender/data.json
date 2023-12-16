@@ -62,6 +62,10 @@
       "docs/academics/🤖 CS544",
       "docs/academics/🔧 EE477",
       "docs/academics/templates"
+    ],
+    "docs/academics/🔧 EE477": [
+      "docs/academics/🔧 EE477/📚 Lectures",
+      "docs/academics/🔧 EE477/💻 Labs"
     ]
   },
   "actionBarOrder": {},

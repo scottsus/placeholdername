@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f848668c727f9639",
+        "id": "3694679516095a70",
         "type": "tabs",
         "children": [
           {
-            "id": "a03fd6812ceec524",
+            "id": "55fb026479762ae6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/academics/🔧 EE477/🏗️ Project/Phase III - Layouts.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/academics/🔧 EE477/🏗️ Project/Phase III - Layouts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/academics/🔧 EE477/🏗️ Project/Phase III - Layouts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/academics/🔧 EE477/🏗️ Project/Phase III - Layouts.md"
+              }
             }
           },
           {
@@ -176,6 +184,11 @@
   },
   "active": "be66c745e2a291cd",
   "lastOpenFiles": [
+    "docs/academics/🔧 EE477/💻 Labs/Prelab.md",
+    "docs/academics/🔧 EE477/🏗️ Project/Phase III - Layouts.md",
+    "docs/academics/🔧 EE477/🏗️ Project",
+    "docs/academics/🔧 EE477/✏️ Homeworks",
+    "docs/academics/🔧 EE477/💻 Labs",
     "docs/academics/🔧 EE477/📚 Lectures/HSPICE/🌶️ HSPICE.md",
     "docs/academics/🤖 CS544/📚 Lectures/✍️ Spelling Correction & Statistical Machine Translation.md",
     "docs/academics/🔧 EE477/📚 Lectures/HSPICE/documentation.pdf",
@@ -196,22 +209,17 @@
     "docs/academics/🔧 EE477/📚 Lectures/🇺🇸 Labor Day.md",
     "compiler/test.py",
     "docs/academics/🔧 EE477/📚 Lectures/🛣️ Layout Design, Parasitics.md",
-    "docs/academics/templates/✏️ Template.md",
+    "docs/academics/✏️ Template.md",
     "docs/academics/🔧 EE477/📚 Lectures/📙 Exam 1 Review I.md",
     "docs/academics/🔧 EE477/📚 Lectures/🔻 Inverters - CMOS Inverter.md",
     "docs/academics/🔧 EE477/📚 Lectures/🔻 Inverters - Load Inverters.md",
     "docs/academics/🔧 EE477/📚 Lectures/🔻 Inverters - Static Characteristics.md",
     "docs/academics/🔧 EE477/📚 Lectures/⚡️ MOS Theory - Parasitic Capacitances.md",
-    "docs/academics/🔧 EE477/📚 Lectures/⚡️ MOS Theory - NMOS, IV Characteristics.md",
-    "docs/academics/🔧 EE477/📚 Lectures/⚡️ MOS Theory - Short Channel Effects.md",
     "src/theme/TOCItems/styles.module.css",
     "src/theme/TOCItems/index.js",
     "src/theme/TOCItems/Tree.js",
     "src/theme/TOCItems",
     "src/theme/TOC/styles.module.css",
-    "src/theme/TOC/index.js",
-    "src/theme/TOC",
-    "src/theme/DocItem/TOC/Desktop/index.js",
     "static/attachments/IMG-20231210221708.png",
     "static/attachments/IMG-20231210221654.png",
     "static/attachments/IMG-20231210221635.png",
